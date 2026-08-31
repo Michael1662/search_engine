@@ -16,8 +16,10 @@ class SearchServer {
 public:
     SearchServer(InvertedIndex& idx) : index(idx) {}
 
-    std::vector<std::vector<RelativeIndex>> search(const std::vector<std::string>& queries_input, size_t max_responses = 5);
+    std::vector<std::vector<RelativeIndex>> Search(
+    const std::vector<std::string>& queries_input,
+    size_t max_responses = 5);
 
 private:
-    InvertedIndex& index; // Ссылка вместо копирования!
+    InvertedIndex& index; 
 };

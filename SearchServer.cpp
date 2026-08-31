@@ -4,7 +4,7 @@
 #include <map>
 #include <algorithm>
 
-std::vector<std::vector<RelativeIndex>> SearchServer::search(const std::vector<std::string>& queries_input, size_t max_responses) {
+std::vector<std::vector<RelativeIndex>> SearchServer::Search(const std::vector<std::string>& queries_input, size_t max_responses) {
     std::vector<std::vector<RelativeIndex>> result;
 
     for (const auto& query : queries_input) {
